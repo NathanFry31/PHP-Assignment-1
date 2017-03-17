@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset = "utf-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+	<link rel="stylesheet" href="main.css" >
+	<title>Book Lover Website</title>
+</head>
+<body>
+	<article class = "container">
+		<h1>The Book Lovers Club</h1>
+		<p>Please enter your book information in the desired areas</p>
+		<form method = "post" action = "validateBook.php">
+			<div class ="form-group">
+				<input type ="text" class = "form-control" id ="book_title" aria-describedby= "Book Title" placeholder="Book Title" name="book_title">
+			</div>
+			<div class ="form-group">
+				<input type ="text" class = "form-control" id ="book_genre" aria-describedby= "Book Genre" placeholder="Book Genre" name="book_genre">
+			</div>
+			<div class ="form-group">
+				<textarea id=book_review name="book_review" cols=50 rows=6 placeholder="Right your review here!"></textarea>
+			</div>
+			<div class ="form-group">
+				<input type ="text" class = "form-control" id ="person_name" aria-describedby= "Name" placeholder="Your Name" name="person_name">
+			</div>
+			<div class ="form-group">
+				<input type ="email" class = "form-control" id ="person_email" aria-describedby= "Email" placeholder="Your Email" name="person_email">
+			</div>
+			<div class ="form-group">
+				<input type ="URL" class = "form-control" id ="website_URL" aria-describedby= "Website" placeholder="Book Store Website" name="website_URL">
+			</div>
+			<button type="submit" class="btn btn-primary">Submit your Book!</button>
+		</form>
+	</article>
+</body>
+</html>
